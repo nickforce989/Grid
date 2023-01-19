@@ -47,7 +47,7 @@ int main (int argc, char **argv)
     {
         std::cout << GridLogMessage << "This matrix should not leave Omega invariant, expect a warning" << std::endl;
     }
-    Sp<nsp>::OmegaInvariance(U);
+    Sp<Nc>::OmegaInvariance(U);
     std::cout <<GridLogMessage << std::endl;
     
     U = U + epsilon*identity;
@@ -78,7 +78,7 @@ int main (int argc, char **argv)
     
     // actual sp2n check
     std::cout << GridLogMessage << "Checking invariance after projection "<< std::endl;
-    Sp<nsp>::OmegaInvariance(U);
+    Sp<Nc>::OmegaInvariance(U);
     
     // checks on elements
     
